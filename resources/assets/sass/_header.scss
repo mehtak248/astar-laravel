@@ -1,0 +1,126 @@
+.navbar {
+    padding: 5px;
+    background-color: #fff;
+    z-index: 2;
+    .navbar-toggler {
+        background-image: url($img-path + '/hamburger.png');
+        background-repeat: no-repeat;
+        background-size: contain;
+        width: 23px;
+        height: 17px;
+        &:focus {
+            outline: 0;
+            box-shadow: none;
+        }
+    }
+    .navbar-collapse {
+        align-items: center;
+        justify-content: center;
+        background: rgb(255, 255, 255);
+        position: absolute;
+        top: 66px;
+        left: 0px;
+        right: 0px;
+        padding: 15px;
+        z-index: 9;
+        @include responsive(lg) {
+            background: transparent;
+            position: static;
+            padding: 0;
+        }
+    }
+    .navbar-brand {
+        img {
+            max-width: 200px;
+            @include responsive(xxl) {
+                max-width: 100%;
+            }
+        }
+    }
+    .navbar-nav {
+        .nav-item {
+            padding: 5px 10px;
+            border-bottom: 1px solid #02254D;
+            @include responsive(lg) {
+                border-bottom: 0;
+                padding: 0 15px;
+            }
+            @include responsive(xxl) {
+                padding: 0 25px;
+            }
+            @include responsive(xxxxl) {
+                padding: 0 50px;
+            }
+            .nav-link {
+                padding: 0;
+                color: #02254D;
+                font-weight: bold;
+                font-size: 14px;
+                line-height: 20px;
+                text-transform: uppercase;
+                font-family: 'GothamRounded-Bold';
+                border-bottom: 2px solid transparent;
+                @include responsive(xl) {
+                    font-size: 14px;
+                    line-height: 20px;
+                }
+                @include responsive(xxxl) {
+                    font-size: 18px;
+                    line-height: 22px;
+                }
+                &:hover {
+                    border-bottom: 2px solid #02254D;
+                }
+            }
+        }
+    }
+    ul {
+        padding: 0;
+        margin: 0;
+        list-style-type: none;
+        li {
+            padding: 5px 10px;
+            border-bottom: 1px solid #02254D;
+            @include responsive(lg) {
+                padding: 0;
+                border-bottom: 0;
+            }
+            a,
+            button {
+                padding: 0;
+                border: 0;
+                color: #02254D;
+                font-weight: bold;
+                font-size: 14px;
+                line-height: 22px;
+                text-transform: uppercase;
+                text-decoration: none;
+                background-color: transparent;
+                font-family: 'GothamRounded-Bold';
+                @include responsive(xl) {
+                    padding: 0 1rem;
+                }
+                @include responsive(xxl) {
+                    font-size: 16px;
+                    line-height: 24px;
+                }
+            }
+            .dropdown-menu {
+                min-width: auto;
+                right: 10px;
+                left: auto;
+                bottom: 0;
+                border: 0;
+                margin: 0;
+                .btn {
+                    font-size: 16px;
+                    line-height: 20px;
+                    background: #02254d;
+                    color: #fff;
+                    padding: 10px 15px;
+                    text-transform: capitalize;
+                }
+            }
+        }
+    }
+}

@@ -1,0 +1,129 @@
+.pl-2-5 {
+    padding-left: 0.75rem;
+}
+
+.file-min {
+    min-width: 170px;
+}
+
+.nav-treeview {
+    padding-left: 15px !important;
+}
+
+.fa, .far, .fas {
+    font-family: "Font Awesome 5 Free";
+}
+
+.brand-link  {
+	text-align: center;
+
+	.brand-image {
+		float:none;
+		max-height: 60px;
+	}
+}
+
+.login-board {
+	.brand-logo {
+		width: 100%;
+	}
+}
+
+.section-title {
+	font-size: 26px;
+    color: #286fbb;
+    font-weight: bold;
+    border-bottom: 5px solid #4b545c;
+    margin: 25px 0;
+}
+
+form label.error {
+	color: #dc3545 !important;
+}
+
+#design_pera_div {
+    table#boqTbl {
+        thead th {
+            vertical-align: middle;
+        }
+    }
+}
+
+.wrapper-project-boq {
+    .table-responsive {
+        .table {
+            width: 170%;
+            select {
+                min-width: 120px;
+            }
+        }
+    }
+    .boq-template-list {
+        .boq-template-list-item {
+            >div.boq-section {
+                margin-bottom: 30px;
+            }
+        }
+        &#boq-template-3-list {
+            .table-responsive .table {
+                width: 215%;
+            }
+        }
+    }
+}
+
+.file-field-wrapper {
+    .input-files-wrapper {
+        a {
+            font-weight: 400;
+            color: #007bff;
+            text-decoration: none;
+            &:hover {
+                color: #0056b3;
+                text-decoration: none;
+            }
+        }
+    }
+}
+
+.pointer-events-none {
+    pointer-events: none;
+    cursor: not-allowed;
+    background-color: #e9ecef;
+    opacity: 1;
+}
+
+.boq-section {
+    border-left: 5px solid #1089f1;
+    .card-header {
+        padding-left: 10px;
+    }
+    .section-sub-headings > div {
+        border-left: 5px solid #5984b1;
+    }
+    .sub-heading-items {
+        border-left: 5px solid #9c9c9c;
+    }
+}
+
+#template-final-total {
+    height: 120px;
+    overflow: hidden;
+    >.card-body {
+        position: relative;
+        .table-responsive {
+            width: calc(100% - 38px);
+            position: absolute;
+            bottom: 15px;
+            overflow-y: hidden;
+            left: 15px;
+            right: 0;
+        }
+    }
+    thead th {
+        visibility: hidden;
+    }
+    td {
+        width: 7.80%;
+    }
+}
